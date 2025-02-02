@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>House Of Nature</title>
+    <link
+      rel="icon"
+      href="{{ url_for('static', filename='icons/header-logo1-1.png') }}"
+      type="image/png"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(248, 244, 242);
+        color: #fff;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      /* Sidebar for Logo */
+      .sidebar {
+        width: 250px;
+        background: rgb(248, 244, 242);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+      }
+
+      .sidebar img {
+        width: 100px;
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+      .sidebar h1 {
+        font-size: 24px;
+        color: #2c8439;
+      }
+
+      .info {
+        font-size: 14px;
+        text-align: center;
+        color: #3a3a3a;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .email {
+        display: flex;
+        align-items: center;
+      }
+
+      .email p {
+        color: #3a3a3a;
+        font-size: 14px;
+      }
+
+      .website {
+        display: flex;
+        align-items: center;
+      }
+
+      .website p {
+        color: #0b4102;
+        font-size: 14px;
+      }
+
+      /* Chat Area */
+      .chat-area {
+        flex: 1;
+        margin-left: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        height: 100vh;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      .chat-body {
+        flex: 1;
+        padding: 20px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        position: relative;
+        scrollbar-width: thin;
+        scrollbar-color: #4caf50 #ffffff;
+        padding-bottom: 100px;
+        padding-left: 50px;
+        padding-top: 20px;
+      }
+
+      .chat-body::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      .chat-body::-webkit-scrollbar-thumb {
+        background-color: #4caf50;
+        border-radius: 10px;
+      }
+
+      .chat-body::-webkit-scrollbar-track {
+        background: #ffffff;
+      }
+
+      /* Welcome Message */
+      .welcome-message {
+        font-size: 32px;
+        font-weight: bold;
+        background: linear-gradient(90deg, #ff8a00, #e52e71);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: fadeInScale 4s ease-in-out;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      @keyframes fadeInScale {
+        from {
+          opacity: 0;
+          transform: translate(-50%, -50%) scale(0.8);
+        }
+        to {
+          opacity: 1;
+          transform: translate(-50%, -50%) scale(1);
+        }
+      }
+
+      /* Chat Footer */
+      .chat-footer {
+        display: flex;
+        align-items: center;
+        background: #222;
+        box-shadow: 0 10px 20px rgba(88, 85, 85, 0.3);
+        border-radius: 50px;
+        padding: 10px 20px;
+        width: 100%;
+        max-width: 600px;
+        position: absolute;
+        bottom: 20px;
+      }
+
+      .chat-input {
+        flex: 1;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 50px;
+        outline: none;
+        font-size: 18px;
+        background: transparent;
+        color: #ffffff;
+      }
+
+      .send-button {
+        margin-left: 10px;
+        padding: 12px;
+        background: rgb(248, 244, 242);
+        border: none;
+        border-radius: 20%;
+        cursor: pointer;
+        font-size: 20px;
+        color: white;
+        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+        transition: background-color 0.8s ease;
+      }
+
+      .send-button:hover {
+        background: #ffeef2;
+      }
+
+      .message {
+        margin: 15px 0;
+        display: flex;
+      }
+
+      .message.user {
+        justify-content: flex-end;
+      }
+
+      .message-content {
+        max-width: 65%;
+        padding: 15px 20px;
+        border-radius: 25px;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      .message.user .message-content {
+        background-color: #4caf50;
+        color: #fff;
+      }
+
+      .message.assistant .message-content {
+        background-color: #333;
+        color: #fff;
+      }
+
+      .loading {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+      }
+
+      .wave {
+        width: 5px;
+        height: 20px;
+        margin: 0 3px;
+        background: #4caf50;
+        border-radius: 50px;
+        animation: wave 1.2s infinite;
+      }
+
+      .wave:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+
+      .wave:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+
+      @keyframes wave {
+        0%,
+        100% {
+          transform: scaleY(1);
+        }
+        50% {
+          transform: scaleY(2);
+        }
+      }
+
+      .recommendation {
+        position: relative;
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #222;
+        border-radius: 10px;
+        color: #fff;
+        line-height: 1.6;
+        cursor: all-scroll; /* Hand cursor */
+        transition: box-shadow 0.2s ease-in-out;
+      }
+
+      .recommendation p {
+        margin: 5px 0;
+      }
+
+      .recommendation .reason {
+        margin-top: 8px;
+        font-size: 14px;
+      }
+
+      .tooltip {
+        background-color: #ffffff;
+        color: #333;
+        padding: 10px 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-size: 14px;
+        max-width: 250px;
+        word-wrap: break-word;
+        white-space: normal;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+        z-index: 9999; /* Ensure it's above the chat content */
+      }
+
+      .toast {
+        position: fixed;
+        top: 100px;
+        right: 200px;
+        z-index: 1055;
+        margin-right: 350px;
+      }
+
+      .chat-input::placeholder {
+        color: rgb(137, 134, 134);
+        opacity: 1; /* Ensures the placeholder is fully visible */
+      }
+
+      /* Password Popup Styles */
+      .password-popup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+      }
+
+      .password-content {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .password-content h2 {
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .password-content input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      .password-content button {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .password-content button:hover {
+        background-color: #45a049;
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Password Popup -->
+    <div id="passwordPopup" class="password-popup">
+      <div class="password-content">
+        <h2>Enter Password</h2>
+        <input
+          type="password"
+          id="passwordInput"
+          placeholder="Enter password"
+          autocomplete="off"
+        />
+        <button id="submitPassword">Submit</button>
+        <p id="errorMessage" style="color: red; display: none">
+          Incorrect password!
+        </p>
+      </div>
+    </div>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <img
+        src="{{ url_for('static', filename='icons/header-logo1-1.png') }}"
+        alt="Logo"
+      />
+      <h1>House Of Nature</h1>
+      <p style="font-size: 12">Customer Support System</p>
+      <p class="info">
+        A smart tool that connects patient concerns with the right doctors by
+        analyzing symptoms and matching them to medical expertise. It displays
+        the list of HON Doctors & Practitions who may be able to provide the
+        required service.
+      </p>
+
+      <div
+        class="phone"
+        style="display: flex; flex-direction: column; gap: 12px"
+      >
+        <a
+          href="https://wa.me/97125857580"
+          target="_blank"
+          style="
+            text-decoration: none;
+            color: inherit;
+            display: inline-flex;
+            align-items: center;
+          "
+        >
+          <img
+            src="{{ url_for('static', filename='icons/whatsapp.png') }}"
+            alt="WhatsApp Icon"
+            style="width: 20px; height: 20px; margin-right: 10px"
+          />
+          <span style="font-size: 14px; padding-bottom: 18px"
+            >+971 2 585 7580</span
+          >
+        </a>
+        <a
+          href="tel:+97126452573"
+          style="
+            text-decoration: none;
+            color: inherit;
+            display: inline-flex;
+            align-items: center;
+          "
+        >
+          <img
+            src="{{ url_for('static', filename='icons/mobile.png') }}"
+            alt="Phone Icon"
+            style="width: 20px; height: 20px; margin-right: 10px"
+          />
+          <span style="font-size: 14px; padding-bottom: 18px"
+            >+971 2 645 2573</span
+          >
+        </a>
+      </div>
+
+      <a href="mailto:reception@honuae.com" style="text-decoration: none">
+        <div class="email" style="cursor: pointer">
+          <p>Booking & Call back via Email</p>
+        </div>
+      </a>
+
+      <a href="https://www.honuae.com/" style="text-decoration: none">
+        <div class="website" style="cursor: pointer">
+          <p>Visit Our Website</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Chat Section -->
+    <div class="chat-area">
+      <div class="chat-body" id="chatBody"></div>
+      <div class="welcome-message" id="welcomeMessage">
+        Welcome to House Of Nature Customer Support System(CSS)
+      </div>
+
+      <div class="loading" id="loading">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+
+      <div
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+        style="position: fixed; top: 20px; right: 20px"
+      >
+        <div class="toast-header">
+          <strong class="me-auto">No Page Found</strong>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body">
+          We will add a web profile a soon as possible.
+        </div>
+      </div>
+
+      <!-- Centered Chat Input Field -->
+      <div class="chat-footer">
+        <input
+          type="text"
+          class="chat-input"
+          id="chatInput"
+          placeholder="Type your symptoms or required wellness service.."
+        />
+        <button class="send-button" id="sendButton">
+          <img
+            src="{{ url_for('static', filename='icons/send-arrow.png') }}"
+            width="20"
+            height="20"
+            alt="Send"
+          />
+        </button>
+      </div>
+    </div>
+
+    <script>
+      // Configuration
+      const PASSWORD = "hon007"; // Set the correct password
+      const STORAGE_KEY = "hon_session"; // Key for local storage
+      const EXPIRATION_HOURS = 10; // Session validity in hours
+
+      // DOM Elements
+      const passwordPopup = document.getElementById("passwordPopup");
+      const passwordInput = document.getElementById("passwordInput");
+      const submitPassword = document.getElementById("submitPassword");
+      const errorMessage = document.getElementById("errorMessage");
+
+      // Hide popup initially (prevents flickering)
+      passwordPopup.style.display = "none";
+
+      // Check if session is still valid
+      function isSessionValid() {
+        const sessionData = localStorage.getItem(STORAGE_KEY);
+        if (!sessionData) return false;
+
+        try {
+          const { timestamp } = JSON.parse(sessionData);
+          const currentTime = Date.now();
+          const expirationTime = timestamp + EXPIRATION_HOURS * 60 * 60 * 1000;
+
+          return currentTime < expirationTime; // Returns true if session is still valid
+        } catch (error) {
+          console.error("Error parsing session data:", error);
+          return false;
+        }
+      }
+
+      // Save the session timestamp when the correct password is entered
+      function saveSession() {
+        const timestamp = Date.now();
+        localStorage.setItem(STORAGE_KEY, JSON.stringify({ timestamp }));
+      }
+
+      // Show password popup
+      function showPasswordPopup() {
+        passwordPopup.style.display = "flex";
+      }
+
+      // Hide password popup
+      function hidePasswordPopup() {
+        passwordPopup.style.display = "none";
+      }
+
+      // Validate password
+      function validatePassword() {
+        const enteredPassword = passwordInput.value.trim();
+        if (enteredPassword === PASSWORD) {
+          saveSession();
+          hidePasswordPopup();
+        } else {
+          errorMessage.style.display = "block";
+        }
+      }
+
+      // Event Listeners
+      submitPassword.addEventListener("click", validatePassword);
+      passwordInput.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+          validatePassword();
+        }
+      });
+
+      // Page Load: Check if session is still valid before showing the popup
+      window.addEventListener("DOMContentLoaded", () => {
+        if (!isSessionValid()) {
+          showPasswordPopup();
+        }
+      });
+
+      const chatBody = document.getElementById("chatBody");
+      const chatInput = document.getElementById("chatInput");
+      const sendButton = document.getElementById("sendButton");
+      const loading = document.getElementById("loading");
+      const welcomeMessage = document.getElementById("welcomeMessage");
+
+      function appendMessage(content, sender) {
+        welcomeMessage.remove();
+        const chatBody = document.getElementById("chatBody"); // Chat container
+        const messageDiv = document.createElement("div");
+        messageDiv.classList.add("message", sender);
+
+        const messageContent = document.createElement("div");
+        messageContent.classList.add("message-content");
+
+        if (sender === "assistant" && Array.isArray(content)) {
+          content.forEach((recommendation) => {
+            const recommendationDiv = document.createElement("div");
+            recommendationDiv.classList.add("recommendation");
+
+            const doctorName = document.createElement("div");
+            doctorName.classList.add("highlight");
+
+            // Create the doctor's name text
+            const nameText = document.createElement("span");
+            nameText.textContent = `Dr. ${recommendation.name}`;
+
+            // Create the image element for the icon
+            const icon = document.createElement("img");
+            icon.src = "{{ url_for('static', filename='icons/view.png') }}";
+            icon.alt = "Icon";
+            icon.classList.add("doctor-icon");
+            icon.style.width = "20px";
+            icon.style.height = "20px";
+            icon.style.cursor = "pointer";
+
+            // Align name and icon
+            doctorName.style.display = "flex";
+            doctorName.style.justifyContent = "space-between";
+            doctorName.style.alignItems = "center";
+
+            doctorName.appendChild(nameText);
+            doctorName.appendChild(icon);
+
+            // Event listener for icon click
+            icon.onclick = () => {
+              if (recommendation.web_page.startsWith("https")) {
+                location.href = `${recommendation.web_page}`;
+              } else {
+                const toastElement = document.querySelector(".toast");
+                const toast = new bootstrap.Toast(toastElement);
+                toast.show();
+              }
+            };
+
+            const department = document.createElement("p");
+            department.textContent = `Department: ${recommendation.department}`;
+
+            const reason = document.createElement("div");
+            reason.classList.add("reason");
+            reason.textContent = `Reason: ${recommendation.reason}`;
+
+            recommendationDiv.appendChild(doctorName);
+            recommendationDiv.appendChild(department);
+            recommendationDiv.appendChild(reason);
+
+            messageContent.appendChild(recommendationDiv);
+          });
+
+          // **Create the footer only once after the loop**
+          const footerDiv = document.createElement("div");
+          footerDiv.textContent =
+            "Please refer to your insurance policy for service coverage.";
+          footerDiv.style.textAlign = "center";
+          footerDiv.style.marginTop = "20px";
+          footerDiv.style.fontSize = "0.9em";
+          footerDiv.style.color = "#fff";
+
+          messageContent.appendChild(footerDiv);
+        } else {
+          messageContent.textContent = content;
+        }
+
+        messageDiv.appendChild(messageContent);
+        chatBody.appendChild(messageDiv);
+        chatBody.scrollTop = chatBody.scrollHeight;
+      }
+
+      function toggleLoading(show) {
+        loading.style.display = show ? "flex" : "none";
+      }
+
+      sendButton.addEventListener("click", () => {
+        const userMessage = chatInput.value.trim();
+        if (userMessage) {
+          appendMessage(userMessage, "user");
+          chatInput.value = "";
+          toggleLoading(true);
+
+          fetch("/recommendDoctor", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ problem: userMessage }),
+          })
+            .then((response) => {
+              toggleLoading(false);
+              if (!response.ok) {
+                throw new Error("No doctor found for the given problem.");
+              }
+              return response.json();
+            })
+            .then((data) => {
+              if (data.recommendations) {
+                appendMessage(data.recommendations, "assistant");
+              } else {
+                throw new Error("No doctors match your input.");
+              }
+            })
+            .catch((error) => {
+              toggleLoading(false);
+              appendMessage(error.message, "assistant");
+            });
+        }
+      });
+
+      chatInput.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+          sendButton.click();
+        }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

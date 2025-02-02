@@ -1,0 +1,777 @@
+[
+    {
+        "id": 91,
+        "name": "Sebastien Dulary",
+        "email": "sebastien@honuae.ae",
+        "info": "Chiropractic Practitioner",
+        "address": "https://www.honuae.com/?cpt_team=dr-sebastien",
+        "phone": "0506621563",
+        "department": {
+            "id": 26,
+            "name": "Chiropractic",
+            "conditions": [
+                "Restore vertebral mobility to keep the skin healthy",
+                "Spinal Disorders: Back pain, neck pain, herniated discs, scoliosis.",
+                "Postural Issues: Rounded shoulders, forward head posture, kyphosis, scoliosis.",
+                "Sports Injuries: Sprains, strains, overuse injuries, rehabilitation needs.",
+                "Joint Problems: Knee pain, shoulder pain, wrist discomfort, arthritis.",
+                "Neuromuscular Issues: Sciatica, nerve compression, muscle spasms, stiffness.",
+                "Headaches and Migraines: Tension headaches, cervicogenic migraines."
+            ],
+            "services": [
+                "Spinal Adjustments: Alignment of the spine to relieve pain and improve posture.",
+                "Posture Correction Programs: Exercises and therapy to improve body alignment.",
+                "Sports Injury Rehabilitation: Treatment for sprains, strains, and joint injuries.",
+                "Neuromuscular Therapy: Relieving nerve compression and muscle tension.",
+                "Ergonomic Advice: Guidance on workplace setups to prevent strain injuries.",
+                "Pain Management Plans: Non-invasive approaches for chronic back, neck, and joint pain.",
+                "Strengthening and Mobility Training: Exercises to enhance mobility and prevent injury."
+            ],
+            "info": "A chiropractic adjustment is a therapeutic treatment where a licensed chiropractor uses their hands or special instruments to manipulate joints in your body. This treatment is also called spinal manipulation or joint manipulation. A chiropractic adjustment can help reduce pain, correct your body’s alignment and how your body functions physically. Chiropractic adjustments offer treatment that complements traditional medical care you receive."
+        },
+        "skills": [
+            {
+                "id": 76,
+                "name": "Sciatica"
+            },
+            {
+                "id": 72,
+                "name": "Sport injuries"
+            },
+            {
+                "id": 69,
+                "name": "Tension headache"
+            },
+            {
+                "id": 71,
+                "name": "Back pain"
+            },
+            {
+                "id": 74,
+                "name": "Neck pain"
+            },
+            {
+                "id": 73,
+                "name": "Radiating pain and numbness into the neck/shoulder/hands"
+            },
+            {
+                "id": 152,
+                "name": "Discopathies"
+            },
+            {
+                "id": 70,
+                "name": "Neuro- musculoskeletal conditions"
+            },
+            {
+                "id": 154,
+                "name": "Peripheral neuropathies"
+            },
+            {
+                "id": 151,
+                "name": "Vertigo"
+            },
+            {
+                "id": 68,
+                "name": "Pregnancy related lower back pain"
+            },
+            {
+                "id": 153,
+                "name": "Adults/ Children/ Elderly"
+            },
+            {
+                "id": 75,
+                "name": "Migraine headache"
+            }
+        ],
+        "licences": [
+            {
+                "id": 40,
+                "name": "Chiropractor"
+            },
+            {
+                "id": 27,
+                "name": "DOH licensed Medical Practitioner"
+            }
+        ]
+    },
+    {
+        "id": 93,
+        "name": "Jisha Saifudheen",
+        "email": "jisha@honuae.ae",
+        "info": "Homeopathy Practitioner",
+        "address": "https://www.honuae.com/team/dr-jisha-saifudheen/",
+        "phone": "0506621563",
+        "department": {
+            "id": 27,
+            "name": "Homeopathy",
+            "conditions": [
+                "Allergies and Respiratory Problems: Asthma, hay fever, sinusitis, recurrent colds.",
+                "Renal stone",
+                "Peptic ulcers",
+                "Recurrent Infections: Tonsillitis, ear infections, urinary tract infections.",
+                "Mental Health Issues: Anxiety, depression, phobias, stress-related disorders.",
+                "Chronic Diseases: Migraines, arthritis, thyroid imbalances, IBS, GERD.",
+                "Respiratory complaints",
+                "Hemorrhoids",
+                "Diabetes",
+                "Hypertension",
+                "Hyperlipidemia",
+                "Hormonal Imbalances: PCOS, irregular menstruation, menopausal symptoms.",
+                "Rheumatism",
+                "Life style disorders",
+                "Skin Conditions: Acne, warts, eczema, vitiligo, fungal infections.",
+                "Premenstrual syndrome",
+                "Hair fall and dandruff",
+                "Chronic fatigue syndrome",
+                "Behavioral Concerns: Hyperactivity, attention disorders, behavioral challenges in children.",
+                "Irritable bowel syndrome",
+                "Pediatrics: Frequent cold, cough, Childhood asthma, Recurrent infection, Tonsils and adenoids, Diarrhea, Constipation"
+            ],
+            "services": [
+                "Constitutional Treatment: Individualized remedies based on holistic evaluation.",
+                "Acute and Chronic Disease Management: Support for long-term conditions like migraines, arthritis, and allergies.",
+                "Skin Care Solutions: Remedies for conditions such as acne, eczema, and vitiligo.",
+                "Behavioral Therapy for Children: Treatment for ADHD, autism, and developmental issues.",
+                "Immunity Boosting Programs: Remedies to enhance resistance to recurrent infections.",
+                "Stress and Anxiety Management: Non-invasive remedies for emotional well-being.",
+                "Hormonal Balancing Remedies: Support for menstrual irregularities, menopause, and thyroid issues."
+            ],
+            "info": "Homeopathy is a natural form of medicine used by over 200 million people worldwide to treat both acute and chronic conditions. Homeopathy is a system of medicine which is based on treating the individual with highly diluted substances given in mainly tablet form, which triggers the body's natural system of healing. It is based\non the principle of \"like cures like\". In other words, a substance taken in small amounts will cure the same\nsymptoms it causes if it were taken in large amounts. When used appropriately under the guidance of a qualified homeopath, they can be taken by people of all ages, including infants, children, adults and pregnant or breastfeeding women."
+        },
+        "skills": [
+            {
+                "id": 82,
+                "name": "Sinusitis"
+            },
+            {
+                "id": 87,
+                "name": "Renal calculi"
+            },
+            {
+                "id": 86,
+                "name": "Worms"
+            },
+            {
+                "id": 96,
+                "name": "Polycystic ovary syndrome"
+            },
+            {
+                "id": 79,
+                "name": "Thyroid"
+            },
+            {
+                "id": 78,
+                "name": "Peptic ulcer"
+            },
+            {
+                "id": 89,
+                "name": "Anxiety disorder"
+            },
+            {
+                "id": 95,
+                "name": "Migaraines"
+            },
+            {
+                "id": 155,
+                "name": "Female complaints"
+            },
+            {
+                "id": 77,
+                "name": "Lifestyle disorders"
+            },
+            {
+                "id": 84,
+                "name": "Upper respiratory tract infection"
+            },
+            {
+                "id": 85,
+                "name": "Acute Gastroenteritis"
+            },
+            {
+                "id": 83,
+                "name": "Dermatitis"
+            },
+            {
+                "id": 88,
+                "name": "Pediatric Complaints"
+            },
+            {
+                "id": 92,
+                "name": "Hemarroids"
+            },
+            {
+                "id": 80,
+                "name": "Acne"
+            },
+            {
+                "id": 93,
+                "name": "Warts"
+            },
+            {
+                "id": 94,
+                "name": "Psoriasis"
+            }
+        ],
+        "licences": [
+            {
+                "id": 29,
+                "name": "DOH licensed"
+            },
+            {
+                "id": 30,
+                "name": "Homeopathic Materia Medica"
+            },
+            {
+                "id": 28,
+                "name": "B.H.M.S, M.D"
+            }
+        ]
+    },
+    {
+        "id": 95,
+        "name": "Sameera Nausheen",
+        "email": "sameera@honuae.ae",
+        "info": "Unaini & Hijama Practitioner",
+        "address": "https://www.honuae.com/team/drsameera/",
+        "phone": "0506621563",
+        "department": {
+            "id": 29,
+            "name": "Unani",
+            "conditions": [
+                "Digestive Disorders: Gastritis, constipation, indigestion, IBS.",
+                "Respiratory Issues: Asthma, bronchitis, seasonal allergies, cold, and flu.",
+                "Joint and Muscle Disorders: Arthritis, gout, muscle spasms.",
+                "Skin Conditions: Acne, pigmentation issues, boils, dry skin.",
+                "Thyroid Diseases",
+                "Reproductive Health: Erectile dysfunction, menstrual irregularities, fertility concerns.",
+                "Immunological disorders",
+                "Lifystyle disorders",
+                "General Wellness: Weak immunity, chronic fatigue, improving vitality and stamina.",
+                "Mental Health: Depression, anxiety, cognitive decline, memory issues.",
+                "Chronic Diseases: Diabetes, hypertension, obesity, kidney stones."
+            ],
+            "services": [
+                "Ilaj bil Dawa (Herbal Medicine): Customized herbal remedies for various ailments.",
+                "Ilaj bil Tadbeer (Regimental Therapy): Detox therapies like steam baths, exercise, and massage.",
+                "Ilaj bil Ghiza (Dietotherapy): Nutritional plans based on Unani principles for health restoration.",
+                "Hijama Therapy: Integrated with Unani medicine for detoxification and pain relief.",
+                "Leech Therapy (Hirudotherapy): Traditional treatment for improving blood circulation.",
+                "Stress and Emotional Health Programs: Holistic solutions for mental wellness.",
+                "Chronic Disease Management: Support for conditions like diabetes, hypertension, and arthritis."
+            ],
+            "info": "The Unani system of Medicine was pioneered in Greece &\ndeveloped by Arabs into an elaborate medical science\nbased on the framework of the teachings of Buqrat (Hippocrates) & Jalinoos (Gallen).\nThe main strength of Unani medicine is it's holistic approach, temperament based prescription & treatment of ailments."
+        },
+        "skills": [
+            {
+                "id": 120,
+                "name": "Hypertension"
+            },
+            {
+                "id": 116,
+                "name": "Menstrual problems"
+            },
+            {
+                "id": 119,
+                "name": "Migraine"
+            },
+            {
+                "id": 117,
+                "name": "Diabetes"
+            },
+            {
+                "id": 118,
+                "name": "Musculoskeletal pain management"
+            }
+        ],
+        "licences": [
+            {
+                "id": 29,
+                "name": "DOH licensed"
+            },
+            {
+                "id": 32,
+                "name": "Unani & Hijama treatment"
+            },
+            {
+                "id": 33,
+                "name": "B.U.M.S, M.D"
+            }
+        ]
+    },
+    {
+        "id": 96,
+        "name": "Saranya Mayadevi",
+        "email": "saranya@honuae.ae",
+        "info": "Naturopathy Practitioner",
+        "address": "https://www.honuae.com/team/dr-saranya-mayadevi/",
+        "phone": "0506621563",
+        "department": {
+            "id": 30,
+            "name": "Naturopathy",
+            "conditions": [
+                "Chronic Fatigue and Low Energy: Persistent tiredness, burnout.",
+                "Weight Management: Obesity, difficulty losing weight, metabolic syndrome.",
+                "Sleep Disorders: Insomnia, restless sleep, sleep apnea support.",
+                "Detoxification: Need for natural cleansing of the liver, kidneys, and digestive system.",
+                "Alergies and Sensitivities: Food allergies, chemical sensitivities, environmental allergies.",
+                "Chronic Illnesses: High blood pressure, diabetes, autoimmune disorders, thyroid issues.",
+                "Pain Management: Migraines, fibromyalgia, chronic back pain, nerve pain.",
+                "Skin and Hair Care: Hair loss, brittle nails, dull skin, eczema, psoriasis.",
+                "Lifestyle disorders",
+                "Stress",
+                "Anxiety",
+                "Depression",
+                "Musculoskeletal disorders",
+                "Cardiovascular diseases",
+                "Central nervous system disorders",
+                "Respiratory disorders"
+            ],
+            "services": [
+                "Functional medicine",
+                "Hydrotherapy: Treatments using water to alleviate pain and detoxify.",
+                "Mud Therapy: Application of therapeutic mud for skin, joint, and digestive health.",
+                "Fasting Therapy: Supervised fasting for detoxification and weight management.",
+                "Diet and Nutrition Therapy: Nutrition plans with organic and natural foods to restore health.",
+                "Acupuncture and Acupressure: Pain management and energy flow regulation.",
+                "Massage Therapy: Relaxation and circulation improvement.",
+                "Yoga and Pranayama: Breathing exercises and asanas for holistic healing.",
+                "Detox Programs: Tailored programs to cleanse the body of toxins."
+            ],
+            "info": "Naturopathy or Naturopathic medicine is a form of complementary and alternative medicine that uses natural remedies to help the body heal itself, It focuses on providing a holistic approach to improve health and prevent disease without the use of drugs."
+        },
+        "skills": [
+            {
+                "id": 123,
+                "name": "Cardiovascular diseases"
+            },
+            {
+                "id": 159,
+                "name": "Sleep disorders"
+            },
+            {
+                "id": 122,
+                "name": "Infertility"
+            },
+            {
+                "id": 160,
+                "name": "Parkinson's disease"
+            },
+            {
+                "id": 117,
+                "name": "Diabetes"
+            },
+            {
+                "id": 157,
+                "name": "migraine and other headache"
+            },
+            {
+                "id": 158,
+                "name": "Hormonal imbalances"
+            },
+            {
+                "id": 112,
+                "name": "Arthritis"
+            },
+            {
+                "id": 129,
+                "name": "gut health"
+            },
+            {
+                "id": 121,
+                "name": "Gastrointestinal diseases"
+            },
+            {
+                "id": 125,
+                "name": "Thyroid disorders"
+            },
+            {
+                "id": 156,
+                "name": "Neck pain and back pain ( all sorts of pain management )"
+            },
+            {
+                "id": 124,
+                "name": "Obesity"
+            },
+            {
+                "id": 126,
+                "name": "Pcod"
+            }
+        ],
+        "licences": [
+            {
+                "id": 35,
+                "name": "Wellness, Lifestyle, Diet and Nutrition Consultant"
+            },
+            {
+                "id": 36,
+                "name": "Yoga Specialist, Gold Medalist"
+            },
+            {
+                "id": 41,
+                "name": "Functional medicine practitioner"
+            },
+            {
+                "id": 29,
+                "name": "DOH licensed"
+            },
+            {
+                "id": 34,
+                "name": "B.N.Y.S, MD"
+            }
+        ]
+    },
+    {
+        "id": 97,
+        "name": "Ali Al-Hefeiti",
+        "email": "ali@honuae.ae",
+        "info": "Licensed Hijama Therapist",
+        "address": "HON",
+        "phone": "0506621563",
+        "department": {
+            "id": 31,
+            "name": "Hijama",
+            "conditions": [
+                "Pain Relief: Chronic pain, muscle stiffness, lower back pain, joint pain.",
+                "Detoxification: Elimination of toxins, improving circulation, lymphatic drainage.",
+                "Chronic Fatigue: Boosting energy, improving vitality.",
+                "Respiratory Issues: Asthma, bronchitis, persistent coughs.",
+                "Skin and Hair Issues: Acne, eczema, psoriasis, hair thinning.",
+                "Stress and Anxiety Relief: Releasing tension, improving mental clarity.",
+                "Headaches and Migraines: Tension-related, stress-induced migraines.",
+                "Post-Workout Recovery: Soreness, lactic acid buildup, faster recovery."
+            ],
+            "services": [
+                "Dry Cupping: Application of suction cups to stimulate circulation.",
+                "Wet Cupping: Controlled removal of stagnant blood to detoxify.",
+                "Facial Cupping: Cosmetic therapy for improved skin tone and wrinkle reduction.",
+                "Pain Relief Therapy: Focused sessions for chronic muscle and joint pain.",
+                "Detox Programs: Full-body cupping for improved vitality and toxin removal.",
+                "Post-Sport Recovery: Cupping to reduce inflammation and enhance performance.",
+                "Stress Relief Sessions: Targeting areas of tension to promote relaxation."
+            ],
+            "info": "Hijama (Cupping Therapy) is an ancient healing method that may ease back pain, neck pain, headaches and other issues. It uses suction to pull on your skin and increase blood flow to the affected area. Cupping causes bruising and can lead to skin infection. There’s mixed evidence on the benefits of cupping, but the treatment risks are generally low."
+        },
+        "skills": [
+            {
+                "id": 120,
+                "name": "Hypertension"
+            },
+            {
+                "id": 127,
+                "name": "Musculoskeletal"
+            },
+            {
+                "id": 119,
+                "name": "Migraine"
+            },
+            {
+                "id": 117,
+                "name": "Diabetes"
+            },
+            {
+                "id": 128,
+                "name": "Pain management"
+            }
+        ],
+        "licences": []
+    },
+    {
+        "id": 100,
+        "name": "Sunakshi Sharma",
+        "email": "sunakshi@honuae.ae",
+        "info": "Ayurveda Practitioner",
+        "address": "https://www.honuae.com/team/dr-sunakshi-sharma/",
+        "phone": "05789755764",
+        "department": {
+            "id": 28,
+            "name": "Ayurveda",
+            "conditions": [
+                "Digestive Disorders: Indigestion, bloating, constipation, IBS, acidity.",
+                "Stress and Mental Health Issues: Anxiety, insomnia, depression.",
+                "Skin Problems: Psoriasis, eczema, acne, rashes.",
+                "Joint and Muscle Pain: Arthritis, gout, stiffness, body pain.",
+                "•Respiratory Conditions: Allergies, asthma, bronchitis, sinusitis.",
+                "Lumbago",
+                "Obesity",
+                "Myalgia",
+                "Dandruff",
+                "Feminine health",
+                "Sports injuries",
+                "Atopic dermatitis"
+            ],
+            "services": [
+                "Shirodhara: Pouring of warm oils on the forehead to relieve anxiety, insomnia, and mental fatigue.",
+                "Panchakarma Therapy: Detoxification and rejuvenation treatments.",
+                "Abhyanga: Traditional Ayurvedic oil massage to improve circulation and relieve stress.",
+                "Herbal Medicine: Customized herbal formulations for various health conditions.",
+                "Nasya: Nasal therapy for sinusitis, headaches, and respiratory issues.",
+                "Basti: Medicated enema therapy for digestive and joint disorders.",
+                "Diet and Lifestyle Counseling: Personalized recommendations based on body constitution (Prakriti).",
+                "Yoga and Meditation: Guided sessions to support physical and mental health.",
+                "Eye treatment",
+                "Akshi tarpana",
+                "Akshi prakshalana"
+            ],
+            "info": "Ayurveda is one of the world's oldest holistic healing systems. It is a form of Complementary and Alternative Medicine (CAM).\nThis holistic system aims to restore health by understanding the root cause of the disease, and not just the symptoms. It aims to maintain the wellbeing of a healthy individual and provide relief in a diseased individual. Ayurveda works with the person - body, mind, and soul. Whilst there are no side effects of Ayurvedic medicines, the Ayurvedic doctor plays a vital role in your\ndosage.They will understand your persona, your lifestyle and the various physical and emotional balances involved before advising the treatment to you."
+        },
+        "skills": [
+            {
+                "id": 99,
+                "name": "Weight loss / slimming program"
+            },
+            {
+                "id": 141,
+                "name": "Ayurveda diet and nutrition"
+            },
+            {
+                "id": 76,
+                "name": "Sciatica"
+            },
+            {
+                "id": 130,
+                "name": "Thrapeutic massage"
+            },
+            {
+                "id": 97,
+                "name": "low back and neck pain"
+            },
+            {
+                "id": 101,
+                "name": "Cervical Spondylosis"
+            },
+            {
+                "id": 98,
+                "name": "hair fall"
+            },
+            {
+                "id": 69,
+                "name": "Tension headache"
+            },
+            {
+                "id": 102,
+                "name": "anxiety"
+            },
+            {
+                "id": 131,
+                "name": "Yoga"
+            },
+            {
+                "id": 107,
+                "name": "Sinusitis & naadi pariksha"
+            },
+            {
+                "id": 103,
+                "name": "stress"
+            },
+            {
+                "id": 108,
+                "name": "Frozen shoulder"
+            },
+            {
+                "id": 109,
+                "name": "Eczema"
+            },
+            {
+                "id": 105,
+                "name": "Women health and PCOS"
+            },
+            {
+                "id": 129,
+                "name": "gut health"
+            },
+            {
+                "id": 100,
+                "name": "Rheumatism and arthritis"
+            },
+            {
+                "id": 104,
+                "name": "dandruff"
+            },
+            {
+                "id": 106,
+                "name": "respiratory and allergy conditions"
+            },
+            {
+                "id": 94,
+                "name": "Psoriasis"
+            }
+        ],
+        "licences": [
+            {
+                "id": 29,
+                "name": "DOH licensed"
+            },
+            {
+                "id": 31,
+                "name": "B.A.M.S"
+            }
+        ]
+    },
+    {
+        "id": 101,
+        "name": "Nikita Ravi",
+        "email": "nikita@honuae.ae",
+        "info": "Ayurveda Practitioner",
+        "address": "https://www.honuae.com/team/dr-nikita-ravi/",
+        "phone": "05789755764",
+        "department": {
+            "id": 28,
+            "name": "Ayurveda",
+            "conditions": [
+                "Digestive Disorders: Indigestion, bloating, constipation, IBS, acidity.",
+                "Stress and Mental Health Issues: Anxiety, insomnia, depression.",
+                "Skin Problems: Psoriasis, eczema, acne, rashes.",
+                "Joint and Muscle Pain: Arthritis, gout, stiffness, body pain.",
+                "•Respiratory Conditions: Allergies, asthma, bronchitis, sinusitis.",
+                "Lumbago",
+                "Obesity",
+                "Myalgia",
+                "Dandruff",
+                "Feminine health",
+                "Sports injuries",
+                "Atopic dermatitis"
+            ],
+            "services": [
+                "Shirodhara: Pouring of warm oils on the forehead to relieve anxiety, insomnia, and mental fatigue.",
+                "Panchakarma Therapy: Detoxification and rejuvenation treatments.",
+                "Abhyanga: Traditional Ayurvedic oil massage to improve circulation and relieve stress.",
+                "Herbal Medicine: Customized herbal formulations for various health conditions.",
+                "Nasya: Nasal therapy for sinusitis, headaches, and respiratory issues.",
+                "Basti: Medicated enema therapy for digestive and joint disorders.",
+                "Diet and Lifestyle Counseling: Personalized recommendations based on body constitution (Prakriti).",
+                "Yoga and Meditation: Guided sessions to support physical and mental health.",
+                "Eye treatment",
+                "Akshi tarpana",
+                "Akshi prakshalana"
+            ],
+            "info": "Ayurveda is one of the world's oldest holistic healing systems. It is a form of Complementary and Alternative Medicine (CAM).\nThis holistic system aims to restore health by understanding the root cause of the disease, and not just the symptoms. It aims to maintain the wellbeing of a healthy individual and provide relief in a diseased individual. Ayurveda works with the person - body, mind, and soul. Whilst there are no side effects of Ayurvedic medicines, the Ayurvedic doctor plays a vital role in your\ndosage.They will understand your persona, your lifestyle and the various physical and emotional balances involved before advising the treatment to you."
+        },
+        "skills": [
+            {
+                "id": 74,
+                "name": "Neck pain"
+            },
+            {
+                "id": 114,
+                "name": "Backache"
+            },
+            {
+                "id": 113,
+                "name": "Digestive Disorders"
+            },
+            {
+                "id": 112,
+                "name": "Arthritis"
+            },
+            {
+                "id": 115,
+                "name": "Headache"
+            },
+            {
+                "id": 111,
+                "name": "Spondylosis"
+            },
+            {
+                "id": 110,
+                "name": "Joint pain"
+            }
+        ],
+        "licences": [
+            {
+                "id": 29,
+                "name": "DOH licensed"
+            },
+            {
+                "id": 31,
+                "name": "B.A.M.S"
+            }
+        ]
+    },
+    {
+        "id": 102,
+        "name": "Waad Babaker",
+        "email": "waad@honuae.ae",
+        "info": "General Practitioner",
+        "address": "https://www.honuae.com/team/dr-waad/",
+        "phone": "05789755764",
+        "department": {
+            "id": 32,
+            "name": "General Medicine",
+            "conditions": [
+                "Primary health check-up",
+                "Referral to relevant specialists",
+                "Examine patients and take their histories, order laboratory tests, X-rays and other diagnostic procedures",
+                "Prescribe and administer medications and treatments",
+                "Advise patients and their families on health care including disease, illness and accident prevention",
+                "Coordinate or manage primary patient care",
+                "Provides continues care to patients",
+                "Treat general illnesses and chronic conditions (such as diabetes, hypertension, thyroid issues, etc)",
+                "Aftercare for stroke victims"
+            ],
+            "services": [
+                "Primary health check-up",
+                "Referral to relevant specialists",
+                "Examine patients and take their histories, order laboratory tests, X-rays and other diagnostic procedures",
+                "Prescribe and administer medications and treatments",
+                "Advise patients and their families on health care including disease, illness and accident prevention",
+                "Coordinate or manage primary patient care",
+                "Provides continues care to patients",
+                "Treat general illnesses and chronic conditions (such as diabetes, hypertension, thyroid issues, etc)",
+                "Aftercare for stroke victims"
+            ],
+            "info": "General medicine or Internal Medicine is the branch of medicine that deals with the prevention, diagnosis, and treatment of a spectrum of adult illnesses.\nOur general practitioner aims to be your primary point of contact for routine medical services, by diagnosing & managing all primary level illnesses & refer you to specialist practitioners if needed."
+        },
+        "skills": [
+            {
+                "id": 146,
+                "name": "Refers patients to relevant specialists"
+            },
+            {
+                "id": 150,
+                "name": "Performs aesthetic procedures: HydraFacial, PRP, mesotherapy, microneedling, skin boosters, chemical peeling, IV therapy, slimming, Coolsculpting"
+            },
+            {
+                "id": 149,
+                "name": "Examines patients, takes medical histories, orders laboratory tests, X-rays, and other diagnostic procedures"
+            },
+            {
+                "id": 142,
+                "name": "Provides continuous care to patients"
+            },
+            {
+                "id": 144,
+                "name": "Conducts primary health check-ups"
+            },
+            {
+                "id": 143,
+                "name": "Prescribes and administers medications and treatments"
+            },
+            {
+                "id": 145,
+                "name": "Coordinates and manages primary patient care"
+            },
+            {
+                "id": 148,
+                "name": "Provides health education"
+            },
+            {
+                "id": 147,
+                "name": "Treats common general illnesses and follows up on chronic conditions"
+            }
+        ],
+        "licences": [
+            {
+                "id": 29,
+                "name": "DOH licensed"
+            },
+            {
+                "id": 37,
+                "name": "M.B.B.S"
+            },
+            {
+                "id": 39,
+                "name": "American Board of Aesthetic Medicine and Cosmetic Surgery"
+            }
+        ]
+    }
+]
