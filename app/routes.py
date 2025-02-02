@@ -30,7 +30,12 @@ def recommend_doctor():
     print("____________________________________")
 
     # Step 1: Read doctor data from JSON file instead of API
-    json_file_path = os.path.join(os.getcwd(), 'app\doctors.json')  # Ensure correct path
+    #json_file_path = os.path.join(os.getcwd(), 'app\doctors.json')  # Ensure correct path
+    
+    json_file_path = os.path.join(os.path.dirname(__file__), 'app', 'doctors.json')
+    print("Looking for doctors.json at:", json_file_path)
+
+    
     try:
         with open(json_file_path, 'r', encoding='utf-8') as file:
             doctor_data = json.load(file)
