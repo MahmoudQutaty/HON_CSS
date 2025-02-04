@@ -51,7 +51,7 @@ def recommend_doctor():
         processed_doctors.append({
             "name": doctor.get("name", "").strip(),
             "information": doctor.get("info", "").strip().lower(),
-            "web_page": doctor.get("web_page", "").strip(),
+            "web_page": doctor.get("address", "").strip(),
             "department": {
                 "name": doctor.get("department", {}).get("name", "").strip().lower(),
                 "conditions": [cond.lower() for cond in doctor.get("department", {}).get("conditions", [])],
